@@ -146,8 +146,8 @@ disableHugoGeneratorInject = false
     url  = "https://www.linkedin.com/in/chew-nicholas"
 
   [[params.social]]
-    name = "case"
-    url  = "/temp_resume.pdf"
+    name = "resume"
+    url  = "/resume.pdf"
 
 # [menu]
 #   [[menu.main]]
