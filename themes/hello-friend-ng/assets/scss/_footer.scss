@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: $light-color-secondary;
 
     @media #{$media-size-tablet} {
@@ -29,12 +29,12 @@
     }
 
     & > *:not(:last-child)::after {
-      content: "•";
-      padding: 0 5px;
+      content: "";
+      padding: 0 3px;
 
       @media #{$media-size-tablet} {
           content: "";
-          padding: 0;
+          padding: 3;
       }
     }
 

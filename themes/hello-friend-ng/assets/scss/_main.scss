@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  text-size-adjust: auto;
   scroll-behavior: smooth;
+  display: block;
 }
 
 *,
@@ -332,6 +334,10 @@ ol ol {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.desc {
+  padding: 0 2em;
 }
 
 .content {
