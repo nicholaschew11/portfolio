@@ -128,14 +128,14 @@ disableHugoGeneratorInject = false
     logoCursorAnimate  = "2s"
 
   [params.portrait]
-    path     = "temp_portrait.jpg"
+    path     = "portrait.jpg"
     alt      = "Portrait"
     maxWidth = "200px"
 
   # Social icons
   [[params.social]]
     name = "email"
-    url  = "mailto:chew.nicky@gmail.com"
+    url  = "mailto:nicholas.chew@uwaterloo.ca"
 
   [[params.social]]
     name = "github"
@@ -145,16 +145,20 @@ disableHugoGeneratorInject = false
     name = "linkedin"
     url  = "https://www.linkedin.com/in/chew-nicholas"
 
-  [[params.social]]
-    name = "resume"
-    url  = "/resume.pdf"
+  # [[params.social]]
+  #   name = "resume"
+  #   url  = "/resume.pdf"
 
-# [menu]
-#   [[menu.main]]
-#     identifier = "about"
-#     name       = "About"
-#     url        = "about/"
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
 #   [[menu.main]]
 #     identifier = "posts"
 #     name       = "Projects"
 #     url        = "posts/"
+  [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "/resume.pdf"
