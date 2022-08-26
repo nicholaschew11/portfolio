@@ -1,7 +1,7 @@
 baseURL = "https://nicholaschew.ca"
 title   = "Nicholas Chew"
 languageCode = "en-us"
-theme = "hello-friend-ng"
+theme = "main"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
