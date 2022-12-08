@@ -57,7 +57,7 @@ disableHugoGeneratorInject = false
   images = [""]
 
   # Home subtitle of the index page.
-  homeSubtitle = "Software Engineering Student at [The University of Waterloo](https://uwaterloo.ca/future-students/programs/software-engineering)"
+  homeSubtitle = "Software Engineering student at the [University of Waterloo](https://uwaterloo.ca/future-students/programs/software-engineering)"
 
   # Set a background for the homepage
   # backgroundImage = "background.png"
@@ -128,7 +128,7 @@ disableHugoGeneratorInject = false
     logoCursorAnimate  = "2s"
 
   [params.portrait]
-    path     = "portrait.jpg"
+    path     = "portrait.png"
     alt      = "Portrait"
     maxWidth = "200px"
 
@@ -145,9 +145,9 @@ disableHugoGeneratorInject = false
     name = "linkedin"
     url  = "https://www.linkedin.com/in/nicholaschew11"
 
-  # [[params.social]]
-  #   name = "resume"
-  #   url  = "/resume.pdf"
+  [[params.social]]
+    name = "resume"
+    url  = "/resume.pdf"
 
 [menu]
   [[menu.main]]
@@ -158,7 +158,7 @@ disableHugoGeneratorInject = false
 #     identifier = "posts"
 #     name       = "Projects"
 #     url        = "posts/"
-  [[menu.main]]
-    identifier = "resume"
-    name       = "Resume"
-    url        = "/resume.pdf"
+  # [[menu.main]]
+  #   identifier = "resume"
+  #   name       = "Resume"
+  #   url        = "/resume.pdf"
