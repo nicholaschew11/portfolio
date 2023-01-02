@@ -5,6 +5,9 @@
     <loc>https://nicholaschew.ca/about/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://nicholaschew.ca/posts/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://nicholaschew.ca/categories/</loc>
   </url><url>
     <loc>https://nicholaschew.ca/</loc>

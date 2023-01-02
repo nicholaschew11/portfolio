@@ -12,7 +12,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nicholaschew.ca/about/</guid>
-      <description>Hi! I&amp;rsquo;m Nicholas. I&amp;rsquo;m a Software Engineering student at the University of Waterloo. I have experience in frontend and backend development from my time working at Rivalry. I have also worked on projects such as a messaging web app , a multiplayer chess app , and wearable glasses that assist in playing blackjack. Aside from school, I spend my time making origami and playing piano which have been long-standing passions of mine.</description>
+      <description>Hi! I&amp;rsquo;m Nicholas. I&amp;rsquo;m a Software Engineering student at the University of Waterloo. I have experience in frontend and backend development from my time working at Rivalry. I have also worked on projects such as a multiplayer chess app, messaging web app, and wearable glasses that assist in playing blackjack. Aside from school, I spend my time making origami and playing piano which have been long-standing passions of mine. I enjoy spending time with friends and hope one day I can travel to Switzerland.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://nicholaschew.ca/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicholaschew.ca/posts/</guid>
+      <description>RadomirChess Chess application featuring networking for many simultaneous multiplayer lobbies, custom chess engine, clean UI and login system.
+SharpChat Fullstack chatting app built with React, PostgreSQL, Redis, and Socket.io. Features light/dark theme with an account system allowing for persistent friends and messages.
+BlackjackVision Glasses equipped with a Raspberry Pi camera and mini OLED panel, used to capture blackjack hands and display optimal moves.</description>
     </item>
     
   </channel>
