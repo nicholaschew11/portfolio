@@ -4,7 +4,7 @@ import theme from '../components/theme'
 
 import ReactGA from 'react-ga';
 
-const trackingID = 'G-1F3H9WFTWQ';
+const trackingID = process.env.MEASUREMENT_ID;
 ReactGA.initialize(trackingID);
 
 export default class Document extends NextDocument {
