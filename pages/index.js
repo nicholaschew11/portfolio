@@ -67,7 +67,7 @@ const Home = () => (
               target="_blank">
               University of Waterloo
             </Link>
-            . I have experience in full-stack development from various internships. Currently at {' '}
+            . I have experience in full-stack development from various internships. Previously at {' '}
             <Link
               as={NextLink}
               href="https://cgi.com"
@@ -115,15 +115,7 @@ const Home = () => (
           </Paragraph>
           <br />
           <Paragraph>
-            Feel free to chat through LinkedIn or at {' '}
-            <Link
-              as={NextLink}
-              href="mailto:nicholas.chew@uwaterloo.ca"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 200, 255, 0.2)' }}
-              target="_blank"
-            >
-              nicholas.chew@uwaterloo.ca
-            </Link>
+            Currently seeking Winter 2024 Internships.
           </Paragraph>
         </Section>
 
