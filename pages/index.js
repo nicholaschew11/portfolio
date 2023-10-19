@@ -40,11 +40,11 @@ const Home = () => (
             mb={10}
           >
           <ProfileImage
-            src="/portrait.png"
+            src="/portrait.jpg"
             alt="Profile image"
             borderRadius="full"
             width="100"
-            height="100"
+            height="95"
           />
           </Box>
           <ThemeToggleButton />
