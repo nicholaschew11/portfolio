@@ -77,7 +77,7 @@ const Home = () => (
               Cisco
             </Link>
             
-            . Previously, I've worked at {' '}
+            . Previously, I&apos;ve worked at {' '}
             <Link
               as={NextLink}
               href="https://cgi.com"
