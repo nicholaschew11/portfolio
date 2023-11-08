@@ -67,7 +67,17 @@ const Home = () => (
               target="_blank">
               University of Waterloo
             </Link>
-            . I have experience in full-stack development from various internships. Previously at {' '}
+            {' '} and an incoming software engineer intern at {' '}
+            
+            <Link 
+              as={NextLink} 
+              href="https://cisco.com" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(244, 196, 48, 0.2)' }}
+              target="_blank">
+              Cisco
+            </Link>
+            
+            . Previously, I've worked at {' '}
             <Link
               as={NextLink}
               href="https://cgi.com"
@@ -76,7 +86,17 @@ const Home = () => (
             >
               CGI 
             </Link>
-            {' '} devloping API microservices and an analytics dashboard. 
+            {' '} and {' '}
+
+            <Link
+              as={NextLink}
+              href="https://rivalry.com"
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.2)' }}
+              target="_blank"
+            >
+              Rivalry
+            </Link>
+            .
             
             </Paragraph>
             <br />
@@ -90,7 +110,7 @@ const Home = () => (
             >
               multiplayer chess app
             </Link>
-              , {' '}
+            {' '} and {' '}
 
             <Link
               as={NextLink}
@@ -100,22 +120,12 @@ const Home = () => (
             >
               messaging web app
             </Link>
-              , and {' '} 
-              
-            <Link
-              as={NextLink}
-              href="https://github.com/nicholaschew11/BlackjackVision"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 200, 255, 0.2)' }}
-              target="_blank"
-            >
-              wearable glasses for blackjack
-            </Link>
-              . Aside from school, I spend my time making origami and playing piano which 
-            have been long-standing passions of mine.
-          </Paragraph>
+              . 
+          </Paragraph>  
           <br />
           <Paragraph>
-            Currently seeking Winter 2024 Internships.
+            Aside from school, I spend my time making origami and playing piano which 
+            have been long-standing passions of mine.
           </Paragraph>
         </Section>
 
