@@ -99,29 +99,6 @@ const Home = () => (
             .
             
             </Paragraph>
-            <br />
-            <Paragraph>
-              I&apos;ve also worked on projects such as a {' '}
-            <Link
-              as={NextLink}
-              href="https://github.com/nicholaschew11/Radomir-Chess"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 200, 255, 0.2)' }}
-              target="_blank"
-            >
-              multiplayer chess app
-            </Link>
-            {' '} and {' '}
-
-            <Link
-              as={NextLink}
-              href="https://github.com/nicholaschew11/sharpchat"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 200, 255, 0.2)' }}
-              target="_blank"
-            >
-              messaging web app
-            </Link>
-              . 
-          </Paragraph>  
           <br />
           <Paragraph>
             Aside from school, I spend my time making origami and playing piano which 
