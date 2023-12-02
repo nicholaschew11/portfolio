@@ -110,7 +110,7 @@ const Home = () => (
         <List >
           <Flex direction="row" style={{ marginLeft: '-16px' }}>
             <ListItem>
-              <Link href="mailto:nicholas.chew@uwaterloo.ca" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
+              <Link href="mailto:nicholaschew10@gmail.com" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="blue"
