@@ -59,7 +59,7 @@ const Home = () => (
 
         <Section delay={0.1}>
           <Paragraph>
-            I&apos;m a Software Engineering student at the {' '}
+            I&apos;m a software engineering student at the {' '}
             <Link 
               as={NextLink} 
               href="https://uwaterloo.ca" 
@@ -67,7 +67,7 @@ const Home = () => (
               target="_blank">
               University of Waterloo
             </Link>
-            {' '} and an incoming software engineer intern at {' '}
+            {' '} and a software engineer intern at {' '}
             
             <Link 
               as={NextLink} 
@@ -99,11 +99,6 @@ const Home = () => (
             .
             
             </Paragraph>
-          <br />
-          <Paragraph>
-            Aside from school, I spend my time making origami and playing piano which 
-            have been long-standing passions of mine.
-          </Paragraph>
         </Section>
 
         <Section delay={0.1}>
