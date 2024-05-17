@@ -77,7 +77,7 @@ const Home = () => (
               Coalition
             </Link>
 
-			{' '} Previously, I&apos;ve worked at {' '}
+			. Previously, I&apos;ve worked at {' '}
 			<Link
               as={NextLink}
               href="https://cisco.com"
@@ -95,7 +95,7 @@ const Home = () => (
             >
               CGI 
             </Link>
-            . I'm open to backend, infrastructure, and AI roles for Fall 2024.
+            . I&apos;m open to backend, infrastructure, and AI roles for Fall 2024.
             </Paragraph>
         </Section>
 
