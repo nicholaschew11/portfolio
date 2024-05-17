@@ -63,21 +63,30 @@ const Home = () => (
             <Link 
               as={NextLink} 
               href="https://uwaterloo.ca" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(244, 196, 48, 0.2)' }}
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
               target="_blank">
               University of Waterloo
             </Link>
-            {' '} and a software engineer intern at {' '}
+            {' '} and a backend engineer intern at {' '}
             
             <Link 
               as={NextLink} 
-              href="https://cisco.com" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(244, 196, 48, 0.2)' }}
+              href="https://coalitioninc.com" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
               target="_blank">
-              Cisco
+              Coalition
             </Link>
-            
-            . Previously, I&apos;ve worked at {' '}
+
+			{' '} Previously, I&apos;ve worked at {' '}
+			<Link
+              as={NextLink}
+              href="https://cisco.com"
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.2)' }}
+              target="_blank"
+            >
+			Cisco
+			</Link>
+			, {' '}
             <Link
               as={NextLink}
               href="https://cgi.com"
@@ -86,18 +95,7 @@ const Home = () => (
             >
               CGI 
             </Link>
-            {' '} and {' '}
-
-            <Link
-              as={NextLink}
-              href="https://rivalry.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.2)' }}
-              target="_blank"
-            >
-              Rivalry
-            </Link>
-            .
-            
+            . I'm open to backend, infrastructure, and AI roles for Fall 2024.
             </Paragraph>
         </Section>
 
