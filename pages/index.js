@@ -76,7 +76,7 @@ const Home = () => (
                 target="_blank">
                 KAIST
               </Link>
-              {' '} working on LLM agents. Previously I've worked at {''}
+              {' '} working on LLM agents. Previously I&apos;ve worked at {''}
               <Link 
                 as={NextLink} 
                 href="https://coalitioninc.com" 
