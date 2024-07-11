@@ -40,11 +40,11 @@ const Home = () => (
             mb={10}
           >
           <ProfileImage
-            src="/portrait.jpg"
+            src="/pic.jpg"
             alt="Profile image"
             borderRadius="full"
             width="100"
-            height="95"
+            height="100"
           />
           </Box>
           <ThemeToggleButton />
@@ -60,42 +60,49 @@ const Home = () => (
         <Section delay={0.1}>
           <Paragraph>
             I&apos;m a software engineering student at the {' '}
-            <Link 
-              as={NextLink} 
-              href="https://uwaterloo.ca" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
-              target="_blank">
-              University of Waterloo
-            </Link>
-            {' '} and a backend engineer intern at {' '}
-            
-            <Link 
-              as={NextLink} 
-              href="https://coalitioninc.com" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
-              target="_blank">
-              Coalition
-            </Link>
-
-			. Previously, I&apos;ve worked at {' '}
-			<Link
-              as={NextLink}
-              href="https://cisco.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.2)' }}
-              target="_blank"
-            >
-			Cisco
-			</Link>
-			, {' '}
-            <Link
-              as={NextLink}
-              href="https://cgi.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.2)' }}
-              target="_blank"
-            >
-              CGI 
-            </Link>
-            . I&apos;m open to backend, infrastructure, and AI roles for Fall 2024.
+              <Link 
+                as={NextLink} 
+                href="https://uwaterloo.ca" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+                target="_blank">
+                University of Waterloo
+              </Link>
+              {' '} and an incoming ML Researcher at {' '}
+              
+              <Link 
+                as={NextLink} 
+                href="https://www.kaist.ac.kr/en/" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+                target="_blank">
+                KAIST
+              </Link>
+              {' '} working on LLM agents. Previously I've worked at {''}
+              <Link 
+                as={NextLink} 
+                href="https://coalitioninc.com" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+                target="_blank">
+                Coalition
+              </Link>
+              , {' '}
+              <Link
+                as={NextLink}
+                href="https://cisco.com"
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.2)' }}
+                target="_blank"
+              >
+              Cisco
+              </Link>
+              , and {' '} 
+              <Link
+                as={NextLink}
+                href="https://cgi.com"
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.2)' }}
+                target="_blank"
+              >
+                CGI 
+              </Link>
+            .
             </Paragraph>
         </Section>
 
