@@ -67,7 +67,7 @@ const Home = () => (
                 target="_blank">
                 University of Waterloo
               </Link>
-              {' '} and an incoming ML Researcher at {' '}
+              {' '} and an ML Researcher at {' '}
               
               <Link 
                 as={NextLink} 
