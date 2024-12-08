@@ -15,7 +15,7 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import ThemeToggleButton from '../components/theme-toggle-button'
 import Layout from '../components/layouts/main'
-import { FaGithub , FaEnvelope, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -63,20 +63,23 @@ const Home = () => (
               <Link 
                 as={NextLink} 
                 href="https://uwaterloo.ca" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
                 target="_blank">
                 University of Waterloo
               </Link>
-              {' '} and an ML Researcher at {' '}
-              
+              {' '} and an incoming Production Engineer Intern at {' '}
               <Link 
                 as={NextLink} 
-                href="https://www.kaist.ac.kr/en/" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+                href="https://www.meta.com" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
                 target="_blank">
-                KAIST
+                Meta
               </Link>
-              {' '} working on LLM agents. Previously I&apos;ve worked at {''}
+              .
+              </Paragraph>
+              <br></br>
+              <Paragraph>
+              Previously I&apos;ve worked at {''}
               <Link 
                 as={NextLink} 
                 href="https://coalitioninc.com" 
@@ -88,7 +91,7 @@ const Home = () => (
               <Link
                 as={NextLink}
                 href="https://cisco.com"
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.2)' }}
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.4)' }}
                 target="_blank"
               >
               Cisco
@@ -97,12 +100,20 @@ const Home = () => (
               <Link
                 as={NextLink}
                 href="https://cgi.com"
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.2)' }}
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.4)' }}
                 target="_blank"
               >
                 CGI 
               </Link>
-            .
+            . I was also an ML and HCI researcher at {' '}
+            <Link 
+              as={NextLink} 
+              href="https://www.kaist.ac.kr/en/" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.6)' }}
+              target="_blank">
+              KAIST
+            </Link>
+            {' '} working on LLM agent simulations.
             </Paragraph>
         </Section>
 
@@ -133,7 +144,7 @@ const Home = () => (
                 </Button>
               </Link>
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               <Link href="https://github.com/nicholaschew11" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
                 <Button
                   variant="ghost"
@@ -143,7 +154,7 @@ const Home = () => (
                   Github
                 </Button>
               </Link>
-            </ListItem>
+            </ListItem> */}
           </Flex>
         </List>
         </Section>
