@@ -24,7 +24,7 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Center h="70vh">
+    <Center h="70vh"> 
       <Container>
       <Section delay={0.1}>
         <Flex justify="space-between" alignItems="center">
