@@ -40,7 +40,7 @@ const Home = () => (
             mb={10}
           >
           <ProfileImage
-            src="/pic.jpg"
+            src="/ppic.jpg"
             alt="Profile image"
             borderRadius="full"
             width="100"
