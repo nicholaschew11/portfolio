@@ -59,21 +59,21 @@ const Home = () => (
 
         <Section delay={0.1}>
           <Paragraph>
-            I&apos;m a software engineering student at the {' '}
-              <Link 
-                as={NextLink} 
-                href="https://uwaterloo.ca" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
-                target="_blank">
-                University of Waterloo
-              </Link>
-              {' '} and an incoming Production Engineer Intern at {' '}
+            I&apos;m a production engineer intern at {' '}
               <Link 
                 as={NextLink} 
                 href="https://www.meta.com" 
                 _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
                 target="_blank">
                 Meta
+              </Link>
+              {' '} and a software engineering student at the {' '}
+              <Link 
+                as={NextLink} 
+                href="https://uwaterloo.ca" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
+                target="_blank">
+                University of Waterloo
               </Link>
               .
               </Paragraph>
@@ -105,7 +105,7 @@ const Home = () => (
               >
                 CGI 
               </Link>
-            . I was also an ML and HCI researcher at {' '}
+            . I was a visiting researcher at {' '}
             <Link 
               as={NextLink} 
               href="https://www.kaist.ac.kr/en/" 
