@@ -59,13 +59,13 @@ const Home = () => (
 
         <Section delay={0.1}>
           <Paragraph>
-            I&apos;m a production engineer intern at {' '}
+            I&apos;m an incoming software engineer intern at {''}
               <Link 
                 as={NextLink} 
-                href="https://www.meta.com" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
+                href="https://www.databricks.com/" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
                 target="_blank">
-                Meta
+                Databricks
               </Link>
               {' '} and a software engineering student at the {' '}
               <Link 
@@ -75,7 +75,19 @@ const Home = () => (
                 target="_blank">
                 University of Waterloo
               </Link>
-              .
+              . 
+              </Paragraph>
+              <br></br>
+              <Paragraph>
+              Most recently I was a software engineer intern at {' '}
+              <Link 
+                as={NextLink} 
+                href="https://www.meta.com" 
+                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
+                target="_blank">
+                Meta
+              </Link>
+              {' '} working on AI inference infrastructure.
               </Paragraph>
               <br></br>
               <Paragraph>
@@ -113,7 +125,7 @@ const Home = () => (
               target="_blank">
               KAIST
             </Link>
-            {' '} working on LLM agent simulations.
+            {' '} working on LLM agent simulation architectures.
             </Paragraph>
         </Section>
 
