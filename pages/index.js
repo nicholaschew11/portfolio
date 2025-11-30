@@ -60,64 +60,76 @@ const Home = () => (
         <Section delay={0.1}>
           <Paragraph>
             I&apos;m an incoming software engineer intern at {''}
-              <Link 
-                as={NextLink} 
-                href="https://www.databricks.com/" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
-                target="_blank">
-                Databricks
-              </Link>
-              {' '} and a software engineering student at the {' '}
-              <Link 
-                as={NextLink} 
-                href="https://uwaterloo.ca" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
-                target="_blank">
-                University of Waterloo
-              </Link>
-              . 
-              </Paragraph>
-              <br></br>
-              <Paragraph>
-              Most recently I was a software engineer intern at {' '}
-              <Link 
-                as={NextLink} 
-                href="https://www.meta.com" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
-                target="_blank">
-                Meta
-              </Link>
-              {' '} working on AI inference infrastructure.
-              </Paragraph>
-              <br></br>
-              <Paragraph>
-              Previously I&apos;ve worked at {''}
-              <Link 
-                as={NextLink} 
-                href="https://coalitioninc.com" 
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
-                target="_blank">
-                Coalition
-              </Link>
-              , {' '}
-              <Link
-                as={NextLink}
-                href="https://cisco.com"
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.4)' }}
-                target="_blank"
-              >
-              Cisco
-              </Link>
-              , and {' '} 
-              <Link
-                as={NextLink}
-                href="https://cgi.com"
-                _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.4)' }}
-                target="_blank"
-              >
-                CGI 
-              </Link>
-            . I was a visiting researcher at {' '}
+            <Link 
+              as={NextLink} 
+              href="https://www.openai.com/" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(8, 8, 8, 0.8)' }}
+              target="_blank">
+              OpenAI
+            </Link>
+            {' '} and {' '}
+            <Link 
+              as={NextLink} 
+              href="https://www.databricks.com/" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
+              target="_blank">
+              Databricks.
+            </Link>
+            {' '} I&apos;m also a software engineering student at the {' '}
+            <Link 
+              as={NextLink} 
+              href="https://uwaterloo.ca" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
+              target="_blank">
+              University of Waterloo
+            </Link>
+            {' '} pursuing specializations in Human-Computer Interaction and Artificial Intelligence.
+          </Paragraph>
+          <br />
+          <Paragraph>
+            Most recently I was a software engineer intern at {' '}
+            <Link 
+              as={NextLink} 
+              href="https://www.meta.com" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
+              target="_blank">
+              Meta
+            </Link>
+            {' '} working on AI inference infrastructure.
+          {/* </Paragraph>
+          <br />
+          <Paragraph> */}
+            {' '} Previously I&apos;ve worked at {''}
+            <Link 
+              as={NextLink} 
+              href="https://coalitioninc.com" 
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+              target="_blank">
+              Coalition
+            </Link>
+            , {' '}
+            <Link
+              as={NextLink}
+              href="https://cisco.com"
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.4)' }}
+              target="_blank"
+            >
+            Cisco
+            </Link>
+            , and {' '} 
+            <Link
+              as={NextLink}
+              href="https://cgi.com"
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.4)' }}
+              target="_blank"
+            >
+              CGI 
+            </Link>
+            .
+          {/* </Paragraph>
+          <br />
+          <Paragraph> */}
+            {' '}I was a visiting researcher at {' '}
             <Link 
               as={NextLink} 
               href="https://www.kaist.ac.kr/en/" 
@@ -125,8 +137,8 @@ const Home = () => (
               target="_blank">
               KAIST
             </Link>
-            {' '} working on LLM agent simulation architectures.
-            </Paragraph>
+            {' '} in South Korea working on LLM agent simulation architectures.
+          </Paragraph>
         </Section>
 
         <Section delay={0.1}>
