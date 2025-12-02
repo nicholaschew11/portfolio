@@ -63,7 +63,7 @@ const Home = () => (
             <Link 
               as={NextLink} 
               href="https://www.openai.com/" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(8, 8, 8, 0.8)' }}
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(8, 8, 8, 0.4)' }}
               target="_blank">
               OpenAI
             </Link>
@@ -73,9 +73,9 @@ const Home = () => (
               href="https://www.databricks.com/" 
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
               target="_blank">
-              Databricks.
+              Databricks
             </Link>
-            {' '} I&apos;m also a software engineering student at the {' '}
+            . I&apos;m also a software engineering student at the {' '}
             <Link 
               as={NextLink} 
               href="https://uwaterloo.ca" 
@@ -103,7 +103,7 @@ const Home = () => (
             <Link 
               as={NextLink} 
               href="https://coalitioninc.com" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.2)' }}
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.4)' }}
               target="_blank">
               Coalition
             </Link>
