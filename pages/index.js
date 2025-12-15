@@ -87,7 +87,7 @@ const Home = () => (
           </Paragraph>
           <br />
           <Paragraph>
-            Most recently I was a software engineer intern at {' '}
+            Recently I was a software engineer intern at {' '}
             <Link 
               as={NextLink} 
               href="https://www.meta.com" 
