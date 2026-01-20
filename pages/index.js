@@ -26,59 +26,84 @@ const Home = () => (
   <Layout>
     <Center h="70vh">
       <Container>
-      <Section delay={0.1}>
-        <Flex justify="space-between" alignItems="center">
-          <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="ghost"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-            mb={10}
-          >
-          <ProfileImage
-            src="/ppic.jpg"
-            alt="Profile image"
-            borderRadius="full"
-            width="100"
-            height="100"
-          />
+        <Section delay={0.1}>
+          <Flex justify="space-between" alignItems="center">
+            <Box
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="ghost"
+              w="100px"
+              h="100px"
+              display="inline-block"
+              borderRadius="full"
+              overflow="hidden"
+              mb={10}
+            >
+              <ProfileImage
+                src="/ppic.jpg"
+                alt="Profile image"
+                borderRadius="full"
+                width="100"
+                height="100"
+              />
+            </Box>
+            <ThemeToggleButton />
+          </Flex>
+          <Box flexGrow={1}>
+            <Heading as="h4" variant="page-title" display="flex">
+              Hi, I&apos;m Nicholas
+            </Heading>
           </Box>
-          <ThemeToggleButton />
-        </Flex>
-        <Box flexGrow={1}>
-          <Heading as="h4" variant="page-title" display="flex">
-            Hi, I&apos;m Nicholas
-          </Heading>
-        </Box>
-      </Section>
+        </Section>
 
 
         <Section delay={0.1}>
           <Paragraph>
-            I&apos;m an incoming software engineer intern at {''}
-            <Link 
-              as={NextLink} 
-              href="https://www.openai.com/" 
+            I&apos;m an incoming Member of Technical Staff Intern at {''}
+            <Link
+              as={NextLink}
+              href="https://www.openai.com/"
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(8, 8, 8, 0.4)' }}
               target="_blank">
-              OpenAI
+              OpenAI.
             </Link>
-            {' '} and {' '}
-            <Link 
-              as={NextLink} 
-              href="https://www.databricks.com/" 
+            {' '} Currently at {' '}
+            <Link
+              as={NextLink}
+              href="https://www.databricks.com/"
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
               target="_blank">
               Databricks
             </Link>
-            . I&apos;m also a software engineering student at the {' '}
-            <Link 
-              as={NextLink} 
-              href="https://uwaterloo.ca" 
+            {' '} working on the {' '}
+            <Link
+              as={NextLink}
+              href="https://www.databricks.com/blog/introducing-real-time-mode-apache-sparktm-structured-streaming"
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
+              target="_blank">
+              Spark Structured Streaming Engine
+            </Link>
+            .
+
+            Previously, I was a production engineer intern at {' '}
+            <Link
+              as={NextLink}
+              href="https://www.meta.com"
+              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
+              target="_blank">
+              Meta
+            </Link>
+            {' '} working on ML inference infrastructure.
+
+
+          </Paragraph>
+          <br />
+          <Paragraph>
+
+            I&apos;m a software engineering student at the {' '}
+            <Link
+              as={NextLink}
+              href="https://uwaterloo.ca"
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
               target="_blank">
               University of Waterloo
@@ -87,22 +112,11 @@ const Home = () => (
           </Paragraph>
           <br />
           <Paragraph>
-            Recently I was a software engineer intern at {' '}
-            <Link 
-              as={NextLink} 
-              href="https://www.meta.com" 
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
-              target="_blank">
-              Meta
-            </Link>
-            {' '} working on AI inference infrastructure.
-          {/* </Paragraph>
-          <br />
-          <Paragraph> */}
-            {' '} Previously I&apos;ve worked at {''}
-            <Link 
-              as={NextLink} 
-              href="https://coalitioninc.com" 
+
+            {' '} I&apos;ve also worked at {''}
+            <Link
+              as={NextLink}
+              href="https://coalitioninc.com"
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.4)' }}
               target="_blank">
               Coalition
@@ -114,25 +128,25 @@ const Home = () => (
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.4)' }}
               target="_blank"
             >
-            Cisco
+              Cisco
             </Link>
-            , and {' '} 
+            , and {' '}
             <Link
               as={NextLink}
               href="https://cgi.com"
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.4)' }}
               target="_blank"
             >
-              CGI 
+              CGI
             </Link>
             .
-          {/* </Paragraph>
+            {/* </Paragraph>
           <br />
           <Paragraph> */}
             {' '}I was a visiting researcher at {' '}
-            <Link 
-              as={NextLink} 
-              href="https://www.kaist.ac.kr/en/" 
+            <Link
+              as={NextLink}
+              href="https://www.kaist.ac.kr/en/"
               _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.6)' }}
               target="_blank">
               KAIST
@@ -142,33 +156,33 @@ const Home = () => (
         </Section>
 
         <Section delay={0.1}>
-        <List >
-          <Flex direction="row" style={{ marginLeft: '-16px' }}>
-            <ListItem>
-              <Link href="mailto:nicholaschew10@gmail.com" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="blue"
-                  leftIcon={<FaEnvelope />}
-                  mr={2} 
-                >
-                  Email
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://linkedin.com/in/nicholaschew11" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="blue"
-                  leftIcon={<FaLinkedin />}
-                  mr={2} 
-                >
-                  LinkedIn
-                </Button>
-              </Link>
-            </ListItem>
-            {/* <ListItem>
+          <List >
+            <Flex direction="row" style={{ marginLeft: '-16px' }}>
+              <ListItem>
+                <Link href="mailto:nicholaschew10@gmail.com" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="blue"
+                    leftIcon={<FaEnvelope />}
+                    mr={2}
+                  >
+                    Email
+                  </Button>
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://linkedin.com/in/nicholaschew11" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="blue"
+                    leftIcon={<FaLinkedin />}
+                    mr={2}
+                  >
+                    LinkedIn
+                  </Button>
+                </Link>
+              </ListItem>
+              {/* <ListItem>
               <Link href="https://github.com/nicholaschew11" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
                 <Button
                   variant="ghost"
@@ -179,8 +193,8 @@ const Home = () => (
                 </Button>
               </Link>
             </ListItem> */}
-          </Flex>
-        </List>
+            </Flex>
+          </List>
         </Section>
       </Container>
     </Center>
