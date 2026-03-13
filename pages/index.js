@@ -1,204 +1,176 @@
-import NextLink from 'next/link'
+import NextLink from 'next/link';
 import {
   Link,
-  Container,
-  Heading,
   Box,
-  Button,
-  List,
   Flex,
-  Center,
-  ListItem,
-  chakra
-} from '@chakra-ui/react'
-import Paragraph from '../components/paragraph'
-import Section from '../components/section'
-import ThemeToggleButton from '../components/theme-toggle-button'
-import Layout from '../components/layouts/main'
-import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
-import Image from 'next/image'
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+  Heading,
+  Text,
+} from '@chakra-ui/react';
+import Paragraph from '../components/paragraph';
+import Section from '../components/section';
+import ThemeToggleButton from '../components/theme-toggle-button';
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Home = () => (
-  <Layout>
-    <Center h="70vh">
-      <Container>
-        <Section delay={0.1}>
-          <Flex justify="space-between" alignItems="center">
-            <Box
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
-              borderStyle="ghost"
-              w="100px"
-              h="100px"
-              display="inline-block"
-              borderRadius="full"
-              overflow="hidden"
-              mb={10}
-            >
-              <ProfileImage
-                src="/ppic.jpg"
-                alt="Profile image"
-                borderRadius="full"
-                width="100"
-                height="100"
-              />
-            </Box>
-            <ThemeToggleButton />
-          </Flex>
-          <Box flexGrow={1}>
-            <Heading as="h4" variant="page-title" display="flex">
-              Hi, I&apos;m Nicholas
-            </Heading>
+  <Flex minH="100vh" align="center" justify="center" px={{ base: 6, md: 0 }}>
+    <Box maxW="460px" w="100%" py={16}>
+      <Section delay={0.05}>
+        <Flex justify="space-between" alignItems="center" mb={6}>
+          <Box
+            w="64px"
+            h="64px"
+            borderRadius="full"
+            overflow="hidden"
+            flexShrink={0}
+          >
+            <Image
+              src="/ppic.jpg"
+              alt="Nicholas Chew"
+              width={64}
+              height={64}
+              style={{ objectFit: 'cover', width: '64px', height: '64px', transform: 'scale(1.2)' }}
+            />
           </Box>
-        </Section>
+          <ThemeToggleButton />
+        </Flex>
+        <Heading as="h1" variant="page-title">
+          Hi, I&apos;m Nicholas
+        </Heading>
+      </Section>
 
+      <Section delay={0.15}>
+        <Paragraph>
+          I&apos;m an incoming Member of Technical Staff Intern at{' '}
+          <Link
+            as={NextLink}
+            href="https://www.openai.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            OpenAI
+          </Link>
+          . Currently at{' '}
+          <Link
+            as={NextLink}
+            href="https://www.databricks.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Databricks
+          </Link>{' '}
+          working on{' '}
+          <Link
+            as={NextLink}
+            href="https://www.databricks.com/blog/introducing-real-time-mode-apache-sparktm-structured-streaming"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Spark Structured Streaming
+          </Link>
+          . Previously a production engineer intern at{' '}
+          <Link
+            as={NextLink}
+            href="https://www.meta.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meta
+          </Link>{' '}
+          working on ML inference infrastructure.
+        </Paragraph>
+        <Paragraph>
+          Software engineering student at the{' '}
+          <Link
+            as={NextLink}
+            href="https://uwaterloo.ca"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            University of Waterloo
+          </Link>{' '}
+          pursuing specializations in Human-Computer Interaction and Artificial
+          Intelligence.
+        </Paragraph>
+        <Paragraph>
+          I&apos;ve also worked at{' '}
+          <Link
+            as={NextLink}
+            href="https://coalitioninc.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Coalition
+          </Link>
+          ,{' '}
+          <Link
+            as={NextLink}
+            href="https://cisco.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cisco
+          </Link>
+          , and{' '}
+          <Link
+            as={NextLink}
+            href="https://cgi.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CGI
+          </Link>
+          . I was a visiting researcher at{' '}
+          <Link
+            as={NextLink}
+            href="https://www.kaist.ac.kr/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            KAIST
+          </Link>{' '}
+          in South Korea working on LLM agent simulation architectures.
+        </Paragraph>
+      </Section>
 
-        <Section delay={0.1}>
-          <Paragraph>
-            I&apos;m an incoming Member of Technical Staff Intern at {''}
-            <Link
-              as={NextLink}
-              href="https://www.openai.com/"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(8, 8, 8, 0.4)' }}
-              target="_blank">
-              OpenAI.
-            </Link>
-            {' '} Currently at {' '}
-            <Link
-              as={NextLink}
-              href="https://www.databricks.com/"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
-              target="_blank">
-              Databricks
-            </Link>
-            {' '} working on the {' '}
-            <Link
-              as={NextLink}
-              href="https://www.databricks.com/blog/introducing-real-time-mode-apache-sparktm-structured-streaming"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255,54,33, 0.8)' }}
-              target="_blank">
-              Spark Structured Streaming Engine
-            </Link>
-            .
-
-            Previously, I was a production engineer intern at {' '}
-            <Link
-              as={NextLink}
-              href="https://www.meta.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.8)' }}
-              target="_blank">
-              Meta
-            </Link>
-            {' '} working on ML inference infrastructure.
-
-
-          </Paragraph>
-          <br />
-          <Paragraph>
-
-            I&apos;m a software engineering student at the {' '}
-            <Link
-              as={NextLink}
-              href="https://uwaterloo.ca"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(255, 255, 0, 0.2)' }}
-              target="_blank">
-              University of Waterloo
-            </Link>
-            {' '} pursuing specializations in Human-Computer Interaction and Artificial Intelligence.
-          </Paragraph>
-          <br />
-          <Paragraph>
-
-            {' '} I&apos;ve also worked at {''}
-            <Link
-              as={NextLink}
-              href="https://coalitioninc.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(128, 128, 128, 0.4)' }}
-              target="_blank">
-              Coalition
-            </Link>
-            , {' '}
-            <Link
-              as={NextLink}
-              href="https://cisco.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(66, 212, 245, 0.4)' }}
-              target="_blank"
-            >
-              Cisco
-            </Link>
-            , and {' '}
-            <Link
-              as={NextLink}
-              href="https://cgi.com"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(225, 0, 0, 0.4)' }}
-              target="_blank"
-            >
-              CGI
-            </Link>
-            .
-            {/* </Paragraph>
-          <br />
-          <Paragraph> */}
-            {' '}I was a visiting researcher at {' '}
-            <Link
-              as={NextLink}
-              href="https://www.kaist.ac.kr/en/"
-              _hover={{ cursor: 'pointer', backgroundColor: 'rgba(0, 129, 251, 0.6)' }}
-              target="_blank">
-              KAIST
-            </Link>
-            {' '} in South Korea working on LLM agent simulation architectures.
-          </Paragraph>
-        </Section>
-
-        <Section delay={0.1}>
-          <List >
-            <Flex direction="row" style={{ marginLeft: '-16px' }}>
-              <ListItem>
-                <Link href="mailto:nicholaschew10@gmail.com" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
-                  <Button
-                    variant="ghost"
-                    colorScheme="blue"
-                    leftIcon={<FaEnvelope />}
-                    mr={2}
-                  >
-                    Email
-                  </Button>
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="https://linkedin.com/in/nicholaschew11" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
-                  <Button
-                    variant="ghost"
-                    colorScheme="blue"
-                    leftIcon={<FaLinkedin />}
-                    mr={2}
-                  >
-                    LinkedIn
-                  </Button>
-                </Link>
-              </ListItem>
-              {/* <ListItem>
-              <Link href="https://github.com/nicholaschew11" style={{ background: 'none', boxShadow: 'none' }} target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="blue"
-                  leftIcon={<FaGithub />}
-                >
-                  Github
-                </Button>
-              </Link>
-            </ListItem> */}
-            </Flex>
-          </List>
-        </Section>
-      </Container>
-    </Center>
-  </Layout>
-)
+      <Section delay={0.25}>
+        <Flex gap={5} alignItems="center">
+          <Link
+            href="mailto:nicholaschew10@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            display="flex"
+            alignItems="center"
+            gap={2}
+            opacity={0.55}
+            _hover={{ opacity: 1, textDecoration: 'none' }}
+            transition="opacity 0.2s ease"
+            textDecoration="none"
+            fontSize="sm"
+          >
+            <FaEnvelope size={13} />
+            <Text>Email</Text>
+          </Link>
+          <Link
+            href="https://linkedin.com/in/nicholaschew11"
+            target="_blank"
+            rel="noopener noreferrer"
+            display="flex"
+            alignItems="center"
+            gap={2}
+            opacity={0.55}
+            _hover={{ opacity: 1, textDecoration: 'none' }}
+            transition="opacity 0.2s ease"
+            textDecoration="none"
+            fontSize="sm"
+          >
+            <FaLinkedin size={13} />
+            <Text>LinkedIn</Text>
+          </Link>
+        </Flex>
+      </Section>
+    </Box>
+  </Flex>
+);
 
 export default Home;
