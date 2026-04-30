@@ -25,8 +25,11 @@ const securityHeaders = [
 ];
 
 module.exports = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
-  swcMinify: true,
   async headers() {
     return [
       {
