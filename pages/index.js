@@ -41,7 +41,7 @@ const Home = () => (
 
       <Section delay={0.15}>
         <Paragraph>
-          I&apos;m an incoming Member of Technical Staff Intern at{' '}
+          I&apos;m a Member of Technical Staff Intern at{' '}
           <Link
             as={NextLink}
             href="https://www.openai.com/"
@@ -50,7 +50,16 @@ const Home = () => (
           >
             OpenAI
           </Link>
-          . Currently at{' '}
+          {' '}working on {' '}
+          <Link
+            as={NextLink}
+            href="https://openai.com/codex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Codex
+          </Link>
+          . I was at{' '}
           <Link
             as={NextLink}
             href="https://www.databricks.com/"
@@ -68,7 +77,7 @@ const Home = () => (
           >
             Spark Structured Streaming
           </Link>
-          . Previously a production engineer intern at{' '}
+          {' '} and at {' '}
           <Link
             as={NextLink}
             href="https://www.meta.com"
