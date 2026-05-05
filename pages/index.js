@@ -10,33 +10,24 @@ import Paragraph from '../components/paragraph';
 import Section from '../components/section';
 import ThemeToggleButton from '../components/theme-toggle-button';
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
-import Image from 'next/image';
 
 const Home = () => (
   <Flex minH="100vh" align="center" justify="center" px={{ base: 6, md: 0 }}>
     <Box maxW="460px" w="100%" py={16}>
       <Section delay={0.05}>
         <Flex justify="space-between" alignItems="center" mb={6}>
-          <Box
-            w="64px"
-            h="64px"
-            borderRadius="full"
-            overflow="hidden"
-            flexShrink={0}
+          <Heading
+            as="h1"
+            variant="page-title"
+            fontSize={{ base: '2xl', md: '3xl' }}
+            mb={0}
           >
-            <Image
-              src="/ppic.jpg"
-              alt="Nicholas Chew"
-              width={64}
-              height={64}
-              style={{ objectFit: 'cover', width: '64px', height: '64px', transform: 'scale(1.2)' }}
-            />
+            Hi, I&apos;m Nicholas
+          </Heading>
+          <Box>
+            <ThemeToggleButton />
           </Box>
-          <ThemeToggleButton />
         </Flex>
-        <Heading as="h1" variant="page-title">
-          Hi, I&apos;m Nicholas
-        </Heading>
       </Section>
 
       <Section delay={0.15}>
