@@ -79,7 +79,7 @@ const Home = () => (
           </Link>{' '}
           working on ML inference infrastructure.
         </Paragraph>
-        <Paragraph>
+        {/* <Paragraph>
           Software engineering student at the{' '}
           <Link
             as={NextLink}
@@ -91,9 +91,9 @@ const Home = () => (
           </Link>{' '}
           pursuing specializations in Human-Computer Interaction and Artificial
           Intelligence.
-        </Paragraph>
-        <Paragraph>
-          I&apos;ve also worked at{' '}
+        </Paragraph> */}
+        {/* <Paragraph> */}
+          {/* I&apos;ve also worked at{' '}
           <Link
             as={NextLink}
             href="https://coalitioninc.com"
@@ -119,8 +119,8 @@ const Home = () => (
             rel="noopener noreferrer"
           >
             CGI
-          </Link>
-          . I was a visiting researcher at{' '}
+          </Link> */}
+          {/* . I was a visiting researcher at{' '}
           <Link
             as={NextLink}
             href="https://www.kaist.ac.kr/en/"
@@ -130,7 +130,7 @@ const Home = () => (
             KAIST
           </Link>{' '}
           in South Korea working on LLM agent simulation architectures.
-        </Paragraph>
+        </Paragraph> */}
       </Section>
 
       <Section delay={0.25}>
