@@ -153,8 +153,6 @@ const Home = () => (
           </Link>
           <Link
             href="https://github.com/nicholaschew11"
-            target="_blank"
-            rel="noopener noreferrer"
             display="flex"
             alignItems="center"
             gap={2}
