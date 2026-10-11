@@ -47,7 +47,7 @@ const Home = () => (
             >
               OpenAI
             </Link>
-            , working on{" "}
+            {" — "}
             <Link
               as={NextLink}
               href="https://openai.com/codex"
@@ -66,7 +66,7 @@ const Home = () => (
             >
               Databricks
             </Link>
-            , working on{" "}
+            {" — "}
             <Link
               as={NextLink}
               href="https://www.databricks.com/blog/introducing-real-time-mode-apache-sparktm-structured-streaming"
@@ -85,14 +85,14 @@ const Home = () => (
             >
               Meta
             </Link>
-            , working on{" "}
+            {" — "}
             <Link
               as={NextLink}
               href="https://engineering.fb.com/2024/07/10/production-engineering/tail-utilization-ads-inference-meta/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              ML inference infrastructure
+              AI inference infrastructure
             </Link>
           </ListItem>
           <ListItem>
@@ -104,7 +104,7 @@ const Home = () => (
             >
               NVIDIA
             </Link>
-            , working on{" "}
+            {" — "}
             <Link
               as={NextLink}
               href="https://www.nvidia.com/en-us/data-center/dgx-cloud/"
