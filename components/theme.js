@@ -1,13 +1,13 @@
-import { extendTheme } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
+import { extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
 
 const styles = {
-  global: props => ({
+  global: (props) => ({
     body: {
-      bg: mode('#ffffff', '#111111')(props),
-      color: mode('#111111', '#e5e5e5')(props),
-      lineHeight: '1.8',
-      fontSize: '15px',
+      bg: mode("#ffffff", "#111111")(props),
+      color: mode("#111111", "#e5e5e5")(props),
+      lineHeight: "1.8",
+      fontSize: "15px",
     },
   }),
 };
@@ -15,31 +15,31 @@ const styles = {
 const components = {
   Heading: {
     variants: {
-      'page-title': {
-        fontSize: { base: '2xl', md: '3xl' },
-        fontWeight: '500',
-        letterSpacing: '-0.025em',
-        lineHeight: '1.2',
+      "page-title": {
+        fontSize: { base: "2xl", md: "3xl" },
+        fontWeight: "500",
+        letterSpacing: "-0.025em",
+        lineHeight: "1.2",
       },
     },
   },
   Link: {
-    baseStyle: props => ({
-      color: 'inherit',
-      backgroundColor: 'transparent',
-      textDecoration: 'underline',
-      textUnderlineOffset: '3px',
-      textDecorationThickness: '1px',
+    baseStyle: (props) => ({
+      color: "inherit",
+      backgroundColor: "transparent",
+      textDecoration: "underline",
+      textUnderlineOffset: "3px",
+      textDecorationThickness: "1px",
       textDecorationColor: mode(
-        'rgba(0,0,0,0.3)',
-        'rgba(255,255,255,0.3)'
+        "rgba(0,0,0,0.3)",
+        "rgba(255,255,255,0.3)",
       )(props),
-      transition: 'text-decoration-color 0.2s ease, opacity 0.2s ease',
+      transition: "text-decoration-color 0.2s ease, opacity 0.2s ease",
       _hover: {
-        backgroundColor: 'transparent',
+        backgroundColor: "transparent",
         textDecorationColor: mode(
-          'rgba(0,0,0,0.8)',
-          'rgba(255,255,255,0.8)'
+          "rgba(0,0,0,0.8)",
+          "rgba(255,255,255,0.8)",
         )(props),
       },
     }),
@@ -53,7 +53,7 @@ const fonts = {
 };
 
 const config = {
-  initialColorMode: 'dark',
+  initialColorMode: "dark",
   useSystemColorMode: true,
 };
 

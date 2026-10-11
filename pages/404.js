@@ -1,10 +1,5 @@
-import NextLink from 'next/link'
-import {
-  Heading,
-  Container,
-  Button,
-  Center
-} from '@chakra-ui/react'
+import NextLink from "next/link";
+import { Heading, Container, Button, Center } from "@chakra-ui/react";
 
 const NotFound = () => {
   return (
