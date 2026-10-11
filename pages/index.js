@@ -104,7 +104,7 @@ const Home = () => (
             >
               NVIDIA
             </Link>
-            , working on distributed infrastructure for{" "}
+            , working on{" "}
             <Link
               as={NextLink}
               href="https://www.nvidia.com/en-us/data-center/dgx-cloud/"
