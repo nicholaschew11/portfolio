@@ -79,7 +79,7 @@ const Home = () => (
           <ListItem>
             <Link
               as={NextLink}
-              href="https://engineering.fb.com/category/production-engineering/"
+              href="https://www.meta.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,7 +88,7 @@ const Home = () => (
             {" — "}
             <Link
               as={NextLink}
-              href="https://engineering.fb.com/2024/07/10/production-engineering/tail-utilization-ads-inference-meta/"
+              href="https://engineering.fb.com/category/production-engineering/"
               target="_blank"
               rel="noopener noreferrer"
             >
