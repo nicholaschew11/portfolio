@@ -37,6 +37,7 @@ const Home = () => (
           I&apos;m a software engineer with experience in AI infrastructure and
           distributed systems.
         </Paragraph>
+        <Paragraph>Previously I was at</Paragraph>
         <UnorderedList spacing={2} pl={2} lineHeight={1.8}>
           <ListItem>
             <Link
@@ -47,7 +48,7 @@ const Home = () => (
             >
               OpenAI
             </Link>
-            {" — "}
+            , working on{" "}
             <Link
               as={NextLink}
               href="https://openai.com/codex"
@@ -66,7 +67,7 @@ const Home = () => (
             >
               Databricks
             </Link>
-            {" — "}
+            , working on{" "}
             <Link
               as={NextLink}
               href="https://www.databricks.com/blog/introducing-real-time-mode-apache-sparktm-structured-streaming"
@@ -85,7 +86,7 @@ const Home = () => (
             >
               Meta
             </Link>
-            {" — "}
+            , working on{" "}
             <Link
               as={NextLink}
               href="https://engineering.fb.com/category/production-engineering/"
@@ -104,7 +105,7 @@ const Home = () => (
             >
               NVIDIA
             </Link>
-            {" — "}
+            , working on{" "}
             <Link
               as={NextLink}
               href="https://www.nvidia.com/en-us/data-center/dgx-cloud/"

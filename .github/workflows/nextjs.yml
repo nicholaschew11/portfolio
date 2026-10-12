@@ -27,16 +27,19 @@ jobs:
           node-version: 24
           cache: npm
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate source
+        run: npm run lint && npm run format:check
+
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Validate and build
-        run: npm run check
+      - name: Build static site
+        run: npm run build
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
