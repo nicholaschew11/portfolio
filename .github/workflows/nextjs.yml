@@ -40,6 +40,8 @@ jobs:
 
       - name: Build static site
         run: npm run build
+        env:
+          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.NEXT_PUBLIC_GA_TRACKING_ID }}
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
